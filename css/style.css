@@ -484,11 +484,18 @@ section {
     margin-bottom: 2rem;
 }
 
-.hero-buttons,
-.final-cta-buttons {
+.hero-buttons {
     display: flex;
     justify-content: start;
     align-items: start;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.final-cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 14px;
 }
@@ -4741,6 +4748,7 @@ iframe {
 }
 
 @media (max-width: 991px) {
+
     .intro-grid,
     .contact-form-grid,
     .newsletter-grid,
