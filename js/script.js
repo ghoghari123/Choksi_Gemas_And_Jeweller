@@ -337,9 +337,12 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.push(values);
             writeStorage('diamond_contact_entries', entries);
 
-            formMessage.textContent = 'Your enquiry has been saved locally. We will be in touch soon.';
+            formMessage.textContent = 'Your enquiry has been Send Sucessfully. We will be in touch soon.';
             formMessage.classList.add('show');
             contactForm.reset();
+            setTimeout(() => {
+                formMessage.classList.remove('show');
+            }, 3000);
         });
     }
 
@@ -401,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="section-label">Account</span>
             <h3 id="authTitle">Welcome</h3>
           </div>
-          <button type="button" class="icon-button auth-close" aria-label="Close auth form">
+          <button type="button" class="icon-button auth-close" aria-label="Close auth form" style="color:black;">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
@@ -436,7 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
                     <div class="form-group">
                         <label for="register-phone">Contact Number</label>
-                        <input id="register-phone" type="tel" name="phone" placeholder="Your contact number" required>
+                        <input id="register-phone" type="tel" name="phone" placeholder="Your contact number" required style="width:610px !important;">
                     </div>
                     <div class="form-group">
                         <label for="register-address">Address</label>
