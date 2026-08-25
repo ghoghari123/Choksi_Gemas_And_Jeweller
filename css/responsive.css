@@ -551,8 +551,9 @@ section {
 
     .header-container {
         width: calc(100% - 24px);
-        min-height: var(--header-height);
-        gap: 8px;
+        min-height: 72px;
+        gap: 6px;
+        justify-content: space-between;
     }
 
     .logo {
