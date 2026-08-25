@@ -470,10 +470,10 @@ section {
         grid-template-columns: auto 1fr;
     }
 
-    .guide-highlight > .btn,
-    .consultation-guide-banner > .btn,
-    .faq-help-banner > .btn,
-    .shape-guide-banner > .btn {
+    .guide-highlight>.btn,
+    .consultation-guide-banner>.btn,
+    .faq-help-banner>.btn,
+    .shape-guide-banner>.btn {
         grid-column: 1 / -1;
         justify-self: start;
     }
@@ -556,13 +556,14 @@ section {
     }
 
     .logo {
-        width: 500px;
-       height: auto;
+        width: 145px;
+        min-width: 0;
+        height: 70px;
     }
 
     .logo img {
-        width: 200px;
-        height: auto;
+        width: 128px;
+        max-height: 52px;
     }
 
     .header-actions {
@@ -769,7 +770,7 @@ section {
         gap: 0;
     }
 
-    .collection-details > div {
+    .collection-details>div {
         padding: 0.8rem 0;
     }
 
@@ -808,10 +809,10 @@ section {
         margin-inline: auto;
     }
 
-    .guide-highlight > .btn,
-    .consultation-guide-banner > .btn,
-    .faq-help-banner > .btn,
-    .shape-guide-banner > .btn {
+    .guide-highlight>.btn,
+    .consultation-guide-banner>.btn,
+    .faq-help-banner>.btn,
+    .shape-guide-banner>.btn {
         grid-column: auto;
         width: 100%;
     }
@@ -894,7 +895,7 @@ section {
         gap: 1rem;
     }
 
-    .footer-newsletter > div {
+    .footer-newsletter>div {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.3rem;
@@ -1086,6 +1087,384 @@ section {
     }
 }
 
+/* =========================================================
+   FINAL iPHONE 13 PRO MOBILE FIX
+   390px × 844px
+========================================================= */
+
+@media (max-width: 390px) {
+
+    /* =====================================================
+       HEADER LOGO
+       Keep logo consistent and clear
+    ===================================================== */
+
+    .header-container {
+        width: calc(100% - 24px) !important;
+        min-height: 68px !important;
+        padding: 0 !important;
+    }
+
+    .logo {
+        width: 500px !important;
+        min-width: 500px !important;
+        height: 56px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        flex-shrink: 0 !important;
+    }
+
+    .logo img {
+        width: 1000px !important;
+        max-width: 300px !important;
+        height: auto !important;
+        max-height: 90px !important;
+
+        object-fit: contain !important;
+        object-position: left center !important;
+
+        display: block !important;
+    }
+
+
+    /* =====================================================
+       HEADER ICONS
+    ===================================================== */
+
+    .header-actions {
+        margin-left: auto !important;
+        gap: 5px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .header-action,
+    .auth-toggle,
+    .mobile-menu-button {
+        width: 38px !important;
+        height: 38px !important;
+        min-width: 38px !important;
+        min-height: 38px !important;
+        flex-shrink: 0 !important;
+    }
+
+
+    /* =====================================================
+       SEARCH OVERLAY
+    ===================================================== */
+
+    .search-overlay {
+        padding: 12px !important;
+    }
+
+    .search-container {
+        width: calc(100% - 8px) !important;
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+
+        padding: 22px 16px 18px !important;
+
+        border-radius: 18px !important;
+    }
+
+    .search-container h2 {
+        width: 100% !important;
+
+        padding: 0 28px 0 0 !important;
+        margin: 4px 0 18px !important;
+
+        font-size: clamp(2rem, 9vw, 2.35rem) !important;
+        line-height: 1.02 !important;
+    }
+
+    .search-close {
+        top: 12px !important;
+        right: 12px !important;
+
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+
+    /* =====================================================
+       SEARCH INPUT
+       Input + search button = ONE BAR
+    ===================================================== */
+
+    .search-form {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .search-box {
+        width: 100% !important;
+        min-height: 58px !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 0 !important;
+
+        padding: 5px 5px 5px 16px !important;
+
+        border: 1px solid rgba(180, 155, 110, 0.25) !important;
+        border-radius: 50px !important;
+
+        background: rgba(255, 255, 255, 0.06) !important;
+
+        overflow: hidden !important;
+    }
+
+    .search-box input {
+        flex: 1 1 auto !important;
+
+        width: auto !important;
+        min-width: 0 !important;
+
+        height: 48px !important;
+
+        padding: 0 8px !important;
+
+        border: none !important;
+        outline: none !important;
+
+        background: transparent !important;
+
+        color: #ffffff !important;
+
+        font-size: 14px !important;
+    }
+
+    .search-box input::placeholder {
+        color: rgba(255, 255, 255, 0.6) !important;
+        opacity: 1 !important;
+    }
+
+    .search-box button {
+        flex: 0 0 48px !important;
+
+        width: 48px !important;
+        height: 48px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        border: none !important;
+        border-radius: 50% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: var(--accent-gold, #b18a4a) !important;
+
+        color: #ffffff !important;
+
+        cursor: pointer !important;
+    }
+
+    .search-box button i,
+    .search-box button svg {
+        font-size: 16px !important;
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    /* If clear button exists */
+    .search-box .search-clear,
+    .search-box .clear-search {
+        flex: 0 0 32px !important;
+
+        width: 32px !important;
+        height: 32px !important;
+
+        margin-left: 2px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: transparent !important;
+        border: none !important;
+
+        color: rgba(255, 255, 255, 0.65) !important;
+    }
+
+
+    /* =====================================================
+       HERO UNDER SEARCH
+       Prevent search overlay from disturbing layout
+    ===================================================== */
+
+    .hero-content {
+        width: calc(100% - 24px) !important;
+        max-width: 100% !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .hero-description {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 14px !important;
+        line-height: 1.55 !important;
+    }
+
+    .hero-buttons {
+        width: 100% !important;
+    }
+
+    .hero-buttons .btn {
+        width: 100% !important;
+    }
+
+
+    /* =====================================================
+       FOOTER NEWSLETTER
+       Input + arrow must look like ONE component
+    ===================================================== */
+
+    .footer-newsletter {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+
+        gap: 14px !important;
+    }
+
+    .footer-newsletter>div {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        gap: 4px !important;
+    }
+
+    .newsletter-form {
+        width: 100% !important;
+        height: 56px !important;
+        min-height: 56px !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+
+        gap: 0 !important;
+
+        padding: 4px 5px 4px 16px !important;
+
+        border: 1px solid rgba(214, 189, 145, 0.20) !important;
+        border-radius: 50px !important;
+
+        background: rgba(255, 255, 255, 0.045) !important;
+
+        overflow: hidden !important;
+    }
+
+    .newsletter-form input {
+        flex: 1 1 auto !important;
+
+        width: auto !important;
+        min-width: 0 !important;
+
+        height: 46px !important;
+
+        padding: 0 8px 0 0 !important;
+
+        border: none !important;
+        outline: none !important;
+
+        background: transparent !important;
+
+        color: #ffffff !important;
+
+        font-size: 13px !important;
+    }
+
+    .newsletter-form input::placeholder {
+        color: rgba(255, 255, 255, 0.62) !important;
+        opacity: 1 !important;
+    }
+
+    .newsletter-form button {
+        flex: 0 0 46px !important;
+
+        width: 46px !important;
+        height: 46px !important;
+
+        min-width: 46px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        border: none !important;
+        border-radius: 50% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: var(--accent-gold, #b18a4a) !important;
+
+        color: #ffffff !important;
+
+        box-shadow: none !important;
+    }
+
+
+    /* =====================================================
+       FOOTER LOGO
+       Same visual proportion as header
+    ===================================================== */
+
+    .footer-logo {
+        width: 190px !important;
+        max-width: 75vw !important;
+        height: auto !important;
+
+        object-fit: contain !important;
+    }
+
+
+    /* =====================================================
+       FOOTER BOTTOM
+    ===================================================== */
+
+    .footer-bottom {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        gap: 10px !important;
+    }
+
+    .footer-bottom a {
+        white-space: nowrap !important;
+    }
+
+
+    /* =====================================================
+       BACK TO TOP
+    ===================================================== */
+
+    .back-to-top {
+        right: 12px !important;
+        bottom: 12px !important;
+
+        width: 44px !important;
+        height: 44px !important;
+    }
+}
 
 /* =========================================================
    VERY SMALL DEVICES
@@ -1159,4 +1538,3 @@ section {
         transition-duration: 0.01ms !important;
     }
 }
-
