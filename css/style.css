@@ -5132,11 +5132,11 @@ iframe {
 @media (max-width: 767px) {
 
     .whatsapp-float {
-        width: 46px;
-        height: 46px;
+        width: 14px;
+        height: 74px;
 
-        right: 14px;
-        bottom: 14px;
+        right: 46px;
+        bottom: 46px;
 
         font-size: 25px;
     }
@@ -5146,11 +5146,11 @@ iframe {
 @media (max-width: 480px) {
 
     .whatsapp-float {
+        right: 12px;
+        bottom: 66px;
+
         width: 44px;
         height: 44px;
-
-        right: 12px;
-        bottom: 12px;
 
         font-size: 24px;
     }
