@@ -679,3 +679,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+/* =========================================================
+   GLOBAL WHATSAPP FLOATING BUTTON
+   Automatically added to every page
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Prevent duplicate button
+    if (document.querySelector(".whatsapp-float")) {
+        return;
+    }
+
+    const whatsappButton = document.createElement("a");
+
+    whatsappButton.className = "whatsapp-float";
+
+    whatsappButton.href = "https://wa.me/917862022792";
+    whatsappButton.target = "_blank";
+    whatsappButton.rel = "noopener noreferrer";
+
+    whatsappButton.setAttribute(
+        "aria-label",
+        "Chat with us on WhatsApp"
+    );
+
+    whatsappButton.innerHTML =
+        '<i class="fa-brands fa-whatsapp"></i>';
+
+    document.body.appendChild(whatsappButton);
+});
