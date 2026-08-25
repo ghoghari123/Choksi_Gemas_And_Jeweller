@@ -470,10 +470,10 @@ section {
         grid-template-columns: auto 1fr;
     }
 
-    .guide-highlight > .btn,
-    .consultation-guide-banner > .btn,
-    .faq-help-banner > .btn,
-    .shape-guide-banner > .btn {
+    .guide-highlight>.btn,
+    .consultation-guide-banner>.btn,
+    .faq-help-banner>.btn,
+    .shape-guide-banner>.btn {
         grid-column: 1 / -1;
         justify-self: start;
     }
@@ -556,14 +556,11 @@ section {
     }
 
     .logo {
-        width: 145px;
-        min-width: 0;
-        height: 70px;
+        width: min(210px, 80vw);
     }
 
     .logo img {
-        width: 128px;
-        max-height: 52px;
+        width: min(210px, 80vw);
     }
 
     .header-actions {
@@ -770,7 +767,7 @@ section {
         gap: 0;
     }
 
-    .collection-details > div {
+    .collection-details>div {
         padding: 0.8rem 0;
     }
 
@@ -809,10 +806,10 @@ section {
         margin-inline: auto;
     }
 
-    .guide-highlight > .btn,
-    .consultation-guide-banner > .btn,
-    .faq-help-banner > .btn,
-    .shape-guide-banner > .btn {
+    .guide-highlight>.btn,
+    .consultation-guide-banner>.btn,
+    .faq-help-banner>.btn,
+    .shape-guide-banner>.btn {
         grid-column: auto;
         width: 100%;
     }
@@ -895,7 +892,7 @@ section {
         gap: 1rem;
     }
 
-    .footer-newsletter > div {
+    .footer-newsletter>div {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.3rem;
@@ -912,8 +909,7 @@ section {
     }
 
     .contact-social-links {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
     }
 
 
@@ -970,10 +966,6 @@ section {
 
 @media (max-width: 480px) {
 
-    :root {
-        --header-height: 68px;
-    }
-
     section {
         padding: 44px 0;
     }
@@ -992,13 +984,11 @@ section {
     }
 
     .logo {
-        width: 130px;
-        height: 54px;
+        width: min(210px, 80vw);
     }
 
     .logo img {
-        width: 115px;
-        max-height: 48px;
+        width: min(210px, 80vw);
     }
 
     .header-action,
@@ -1109,11 +1099,11 @@ section {
     }
 
     .logo {
-        width: 115px;
+        width: min(210px, 80vw);
     }
 
     .logo img {
-        width: 105px;
+        width: min(210px, 80vw);
     }
 
     .header-action,
@@ -1160,6 +1150,3 @@ section {
         transition-duration: 0.01ms !important;
     }
 }
-
-
-
