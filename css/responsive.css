@@ -925,8 +925,77 @@ section {
 
     .search-container {
         width: calc(100% - 24px);
-        max-width: none;
+        max-width: 760px;
         padding: 1.1rem;
+    }
+
+    .search-form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.45rem 0.55rem 0.45rem 0.9rem;
+        border-radius: 999px;
+        box-sizing: border-box;
+    }
+
+    .search-form input[type="search"] {
+        flex: 1 1 auto;
+        min-width: 0;
+        width: auto !important;
+        padding: 0.75rem 0.25rem;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .search-form button[type="submit"] {
+        width: 48px !important;
+        min-width: 48px !important;
+        max-width: 48px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        padding: 0 !important;
+        margin: 0;
+        flex: 0 0 48px;
+        border: none;
+        border-radius: 50% !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+        color: var(--white);
+    }
+
+    .search-form button[type="submit"] i {
+        font-size: 0.95rem;
+        line-height: 1;
+    }
+
+    /* Close X inside search bar */
+    .search-form .search-inline-close {
+        width: 32px !important;
+        min-width: 32px !important;
+        max-width: 32px !important;
+        height: 32px !important;
+        padding: 0 !important;
+        margin: 0;
+        flex: 0 0 32px;
+        border: none !important;
+        border-radius: 50% !important;
+        background: transparent !important;
+        color: rgba(17, 17, 17, 0.55) !important;
+        box-shadow: none !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-form .search-inline-close:hover {
+        color: var(--gold-deep) !important;
+        background: transparent !important;
+        transform: none !important;
+        box-shadow: none !important;
     }
 
     .search-close {
