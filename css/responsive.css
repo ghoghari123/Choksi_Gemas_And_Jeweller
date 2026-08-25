@@ -1106,20 +1106,22 @@ section {
     }
 
     .logo {
-        width: 500px !important;
-        min-width: 500px !important;
+        width: 140px !important;
+        min-width: 140px !important;
         height: 56px !important;
+
         display: flex !important;
         align-items: center !important;
         justify-content: flex-start !important;
+
         flex-shrink: 0 !important;
     }
 
     .logo img {
-        width: 1000px !important;
-        max-width: 300px !important;
+        width: 130px !important;
+        max-width: 130px !important;
         height: auto !important;
-        max-height: 90px !important;
+        max-height: 50px !important;
 
         object-fit: contain !important;
         object-position: left center !important;
