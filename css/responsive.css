@@ -575,9 +575,9 @@ section {
     }
 
     .main-navigation {
-        top: var(--header-height);
-        height: calc(100dvh - var(--header-height));
-        padding: 12px 18px 30px;
+        height: auto !important;
+        max-height: calc(100dvh - var(--header-height)) !important;
+        overflow-y: auto;
     }
 
 
@@ -688,6 +688,25 @@ section {
     .certification-mistakes-grid {
         grid-template-columns: 1fr;
     }
+
+    .contact-info-card {
+        width: 100%;
+        gap: 0.8rem;
+        padding: 1.1rem 0.9rem;
+        align-items: flex-start;
+    }
+
+    .contact-info-card h3 {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .contact-info-card p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
 
 
     /* ---------- CONTENT GRIDS ---------- */
@@ -887,15 +906,21 @@ section {
     }
 
     .footer-newsletter {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 1rem;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 1rem !important;
     }
 
     .footer-newsletter>div {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.3rem !important;
     }
 
     .footer-bottom {
