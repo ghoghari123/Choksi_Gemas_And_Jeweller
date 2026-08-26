@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
-
     const header = document.querySelector('.site-header');
     const nav = document.querySelector('.main-navigation');
     const mobileToggle = document.querySelector('.mobile-menu-button');
@@ -369,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             writeStorage('diamond_newsletter', subscriptions);
 
-            successBox.textContent = 'Thank you for subscribing. Your email has been saved locally.';
+            successBox.textContent = 'Thank you for subscribing.';
             successBox.classList.add('show');
             form.reset();
             clearTimeout(messageTimer);
@@ -555,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             users.push({ name, email, phone, address, password, createdAt: new Date().toISOString() });
             writeStorage('diamond_users', users);
-            message.textContent = 'Registration Successful. Redirecting to Login...';
+            message.textContent = 'Registration Successful.';
             message.classList.add('show');
             setTimeout(() => openAuthModal('login'), 1100);
         });

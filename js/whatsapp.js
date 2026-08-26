@@ -35,7 +35,7 @@
 
     var button = document.createElement('a');
     button.className = 'whatsapp-float';
-    button.href = 'https://wa.me/917862022792';
+    button.href = 'https://wa.me/917862022792?text=Hello%20Sir%2FMa%E2%80%99am%2C%0A%0AThank%20you%20for%20visiting%20our%20website.%20We%20appreciate%20your%20interest%20in%20our%20jewellery.%0A%0AAre%20you%20looking%20for%20a%20specific%20jewellery%20design%20or%20would%20you%20like%20to%20explore%20our%20collection%3F%20Our%20team%20would%20be%20happy%20to%20assist%20you.';
     button.target = '_blank';
     button.rel = 'noopener noreferrer';
     button.setAttribute('aria-label', 'Chat with us on WhatsApp');
